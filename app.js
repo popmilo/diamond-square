@@ -13950,10 +13950,6 @@ diamond_square.core.tile_terrain = function(a) {
   }, diamond_square.core.normalize_terrain.call(null, a, cljs.core.count.call(null, diamond_square.core.tiles) - 1)));
 };
 diamond_square.canvas_renderer = {};
-console.log("hello world");
-cljs.core._STAR_print_fn_STAR_ = function(a) {
-  return console.log(a);
-};
 diamond_square.canvas_renderer.canvas = document.getElementById("terrain");
 diamond_square.canvas_renderer.ctx = diamond_square.canvas_renderer.canvas.getContext("2d");
 diamond_square.canvas_renderer.colors = new cljs.core.PersistentVector(null, 10, 5, cljs.core.PersistentVector.EMPTY_NODE, "#1437AD #04859D #007D1C #007D1C #24913C #00C12B #38E05D #A3A3A4 #757575 #FFFFFF".split(" "), null);
@@ -13968,6 +13964,5 @@ diamond_square.canvas_renderer.img_terrain = function(a) {
   }, 0, diamond_square.core.normalize_terrain.call(null, a, cljs.core.count.call(null, diamond_square.canvas_renderer.colors) - 1));
 };
 diamond_square.canvas_renderer.img_terrain.call(null, diamond_square.core.terrain.call(null, 9));
-console.log("Printing on canvas");
 
 //# sourceMappingURL=app.js.map

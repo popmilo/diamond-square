@@ -1,17 +1,8 @@
 (ns diamond-square.canvas-renderer
   (:require [diamond-square.core :as core]))
 
-(.log js/console "hello world")
-(set! *print-fn* #(.log js/console %))
-
-#_(core/print-m
-  (core/tile-terrain
-    (core/terrain 5)))
-
-
 (def canvas (.getElementById js/document "terrain"))
 (def ctx (.getContext canvas "2d"))
-
 
 (def colors
   ["#1437AD" "#04859D" "#007D1C" "#007D1C" "#24913C"
@@ -32,5 +23,3 @@
     0 (core/normalize-terrain m (dec (count colors)))))
 
 (img-terrain (core/terrain 9))
-
-(.log js/console "Printing on canvas")
