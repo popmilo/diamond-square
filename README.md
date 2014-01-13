@@ -1,4 +1,4 @@
-# dimaond-square
+# diamond-square
 
 A simple implementation and walkthrough of the diamond square algorithm.
 
